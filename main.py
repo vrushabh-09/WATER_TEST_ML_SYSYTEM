@@ -8,7 +8,7 @@ app = FastAPI(
 )
 
 # Load model safely
-with open(r"D:\ML_Pipeline\model.pkl", "rb") as f:
+with open(r"model.pkl", "rb") as f:
     model = pickle.load(f)
 
 @app.get("/")
